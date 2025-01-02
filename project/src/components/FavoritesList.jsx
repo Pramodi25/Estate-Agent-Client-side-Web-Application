@@ -1,20 +1,43 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useDrop } from 'react-dnd';
+import { ItemTypes } from '../constants/DragTypes';
 
-function FavoritesList({ favorites, onRemove, onClear }) {
+function FavoritesList({ favorites, onRemove, onClear, onFavorite }) {
+  const [{ isOver }, drop] = useDrop({
+    accept: ItemTypes.PROPERTY,
+    drop: (item) => {
+      if (!favorites.some(f => f.id === item.property.id)) {
+        onFavorite(item.property);
+      }
+    },
+    collect: monitor => ({
+      isOver: !!monitor.isOver(),
+    }),
+  });
   if (favorites.length === 0) {
     return (
-      <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <h2 className="text-xl font-bold mb-4">Favorites</h2>
-        <p className="text-gray-500">No favorites added yet.</p>
+      <div 
+        ref={drop}
+        className={`max-w-4xl mx-auto bg-white shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4 ${
+          isOver ? 'bg-blue-50 border-2 border-blue-300' : ''
+        }`}
+      >
+        <h2 className="text-2xl font-bold mb-6 text-center">Favorites</h2>
+        <p className="text-gray-500">No favorites added yet. Drag properties here to add them.</p>
       </div>
     );
   }
 
   return (
-    <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold">Favorites</h2>
+    <div 
+      ref={drop}
+      className={`max-w-4xl mx-auto bg-white shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4 ${
+        isOver ? 'bg-blue-50 border-2 border-blue-300' : ''
+      }`}
+    >
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold">Favorites</h2>
         <button
           onClick={onClear}
           className="text-red-500 hover:text-red-700 text-sm"

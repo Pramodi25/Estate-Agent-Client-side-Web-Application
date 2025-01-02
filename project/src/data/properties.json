@@ -3,35 +3,516 @@
     {
       "id": 1,
       "title": "Modern 3-Bed House with Garden",
-      "type": "house",
       "price": 450000,
+      "type": "house",
       "bedrooms": 3,
+      "bathrooms": 2,
       "postcode": "SW1A 1AA",
+      "image": "https://www.decoraid.com/wp-content/uploads/2021/04/red-house-exterior-scaled.jpeg",
       "dateAdded": "2024-12-15",
-      "description": "Beautiful modern house with a spacious garden, recently renovated kitchen, and excellent transport links.",
-      "image": "https://images.unsplash.com/photo-1518780664697-55e3ad937233"
+      "description": "Stunning modern house with a beautiful garden, perfect for families. Recently renovated with high-end finishes throughout. This contemporary family home offers spacious living areas, a state-of-the-art kitchen, and a landscaped garden perfect for outdoor entertaining.",
+      "features": [
+        "Modern fitted kitchen with island and Bosch appliances",
+        "Large south-facing garden with patio and BBQ area",
+        "Master bedroom with en-suite and walk-in wardrobe",
+        "Underfloor heating throughout ground floor",
+        "Double garage with electric car charging point",
+        "Smart home system with Nest integration"
+      ],
+      "additionalFeatures": {
+        "squareFootage": 1800,
+        "plotSize": "0.25 acres",
+        "parking": "Double garage + driveway",
+        "heating": "Gas central heating + underfloor",
+        "energyRating": "A",
+        "councilTax": "Band E"
+      },
+      "location": {
+        "nearbySchools": [
+          "St. Mary's Primary (0.3 miles)",
+          "Westminster Academy (0.8 miles)"
+        ],
+        "amenities": [
+          "Local shopping center (5 min walk)",
+          "Public park and playground",
+          "Sports center",
+          "Medical center",
+          "Regular bus services"
+        ]
+      },
+      "agent": {
+        "name": "Sarah Wilson",
+        "phone": "020 7123 4567",
+        "email": "sarah.wilson@propertyagent.com",
+        "expertise": "Family Homes Specialist",
+        "languages": ["English", "Spanish"]
+      },
+      "viewings": {
+        "available": true,
+        "link": "/book-viewing/1",
+        "nextAvailable": [
+          "2025-01-03T10:00:00",
+          "2025-01-03T14:30:00",
+          "2025-01-04T11:00:00"
+        ],
+        "virtualTour": "/virtual-tours/modern-house-1"
+      },
+      "financials": {
+        "councilTax": "£2,200 per annum",
+        "estimatedUtilities": "£150 per month",
+        "tenure": "Freehold"
+      }
     },
     {
       "id": 2,
       "title": "Luxury City Centre Apartment",
-      "type": "flat",
       "price": 350000,
+      "type": "flat",
       "bedrooms": 2,
+      "bathrooms": 2,
       "postcode": "SW1A 2AA",
+      "image": "https://www.souciehorner.com/wp-content/uploads/2017/04/Kitchen3-1536.jpg",
       "dateAdded": "2024-12-20",
-      "description": "Stunning city centre apartment with panoramic views, modern amenities, and secure parking.",
-      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+      "description": "Luxurious apartment in the heart of the city, featuring premium appliances and stunning city views. This elegant 2-bedroom apartment offers sophisticated urban living with high-end finishes throughout. Located in a prestigious development with excellent amenities and 24-hour security.",
+      "features": [
+        "Floor-to-ceiling windows with panoramic city views",
+        "Designer kitchen with Miele appliances",
+        "Private balcony with outdoor seating area",
+        "Secure underground parking space",
+        "24/7 concierge and security service",
+        "Residents' gym and wellness center"
+      ],
+      "additionalFeatures": {
+        "squareFootage": 1200,
+        "floorLevel": 15,
+        "parking": "Underground secure parking",
+        "heating": "Underfloor heating throughout",
+        "energyRating": "B",
+        "councilTax": "Band D"
+      },
+      "location": {
+        "nearbyStations": [
+          "Westminster (5 min walk)",
+          "St James's Park (8 min walk)",
+          "Victoria (12 min walk)"
+        ],
+        "amenities": [
+          "Luxury shopping district",
+          "Michelin-starred restaurants",
+          "Royal Parks",
+          "Theatre district",
+          "Premium fitness centers"
+        ]
+      },
+      "agent": {
+        "name": "James Thompson",
+        "phone": "020 7123 4568",
+        "email": "james.thompson@propertyagent.com",
+        "expertise": "Luxury Property Specialist",
+        "languages": ["English", "French", "Mandarin"]
+      },
+      "viewings": {
+        "available": true,
+        "link": "/book-viewing/2",
+        "nextAvailable": [
+          "2025-01-03T14:00:00",
+          "2025-01-04T11:00:00",
+          "2025-01-04T15:30:00"
+        ],
+        "virtualTour": "/virtual-tours/luxury-city-centre-2"
+      },
+      "financials": {
+        "serviceCharge": "£2,500 per annum",
+        "groundRent": "£350 per annum",
+        "leaseLength": "999 years from 2020",
+        "councilTaxBand": "D"
+      }
     },
     {
       "id": 3,
-      "title": "Cozy Bungalow in Quiet Area",
-      "type": "bungalow",
-      "price": 280000,
+      "title": "Charming Victorian Townhouse",
+      "price": 750000,
+      "type": "house",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "postcode": "SW3 1EH",
+      "image": "https://thumbs.dreamstime.com/z/modern-house-white-swimming-pool-131327139.jpg",
+      "dateAdded": "2024-12-18",
+      "description": "Beautiful Victorian townhouse with original features and modern amenities. Recently refurbished to high standards while preserving its historic charm. Features include original fireplaces, high ceilings, and a modern kitchen extension perfect for family living.",
+      "features": [
+        "Original Victorian features throughout",
+        "Modern kitchen extension with skylight",
+        "Four spacious bedrooms with period features",
+        "South-facing landscaped garden",
+        "Temperature-controlled wine cellar",
+        "Working period fireplaces in main rooms"
+      ],
+      "additionalFeatures": {
+        "squareFootage": 2200,
+        "plotSize": "0.15 acres",
+        "parking": "Off-street parking for 2 cars",
+        "heating": "Modern gas central heating",
+        "energyRating": "C",
+        "councilTax": "Band F"
+      },
+      "location": {
+        "nearbyStations": [
+          "Sloane Square (7 min walk)",
+          "South Kensington (10 min walk)"
+        ],
+        "amenities": [
+          "Kings Road shopping",
+          "Chelsea Green markets",
+          "Royal Hospital Gardens",
+          "Excellent schools nearby",
+          "Artisan cafes and restaurants"
+        ]
+      },
+      "agent": {
+        "name": "Emma Roberts",
+        "phone": "020 7123 4569",
+        "email": "emma.roberts@propertyagent.com",
+        "expertise": "Period Property Specialist",
+        "languages": ["English", "Italian"]
+      },
+      "viewings": {
+        "available": true,
+        "link": "/book-viewing/3",
+        "nextAvailable": [
+          "2025-01-03T11:00:00",
+          "2025-01-04T14:00:00",
+          "2025-01-05T12:30:00"
+        ],
+        "virtualTour": "/virtual-tours/victorian-townhouse-3"
+      },
+      "financials": {
+        "councilTax": "£2,800 per annum",
+        "estimatedUtilities": "£200 per month",
+        "tenure": "Freehold"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Studio Apartment in Tech Hub",
+      "price": 250000,
+      "type": "studio",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "postcode": "EC2A 1NT",
+      "image": "http://cdn.home-designing.com/wp-content/uploads/2015/12/monochromatic-studio-apartment-inspiration.jpg",
+      "dateAdded": "2024-12-22",
+      "description": "Modern studio apartment in London's tech district, perfect for young professionals. Smart home features throughout. This innovative space combines contemporary design with practical living, featuring a custom-designed workspace and the latest in home automation.",
+      "features": [
+        "Custom-designed integrated workspace with ergonomic setup",
+        "Smart home technology with voice control",
+        "Built-in storage solutions throughout",
+        "1GB fiber optic internet pre-installed",
+        "Access to communal rooftop garden with work pods",
+        "Secure bike storage with repair station"
+      ],
+      "additionalFeatures": {
+        "squareFootage": 450,
+        "floorLevel": 5,
+        "parking": "Bike storage available",
+        "heating": "Smart electric heating",
+        "energyRating": "B",
+        "councilTax": "Band B"
+      },
+      "location": {
+        "nearbyStations": [
+          "Old Street (2 min walk)",
+          "Shoreditch High Street (8 min walk)"
+        ],
+        "amenities": [
+          "Silicon Roundabout tech hub",
+          "WeWork spaces",
+          "Artisan coffee shops",
+          "Street food markets",
+          "24/7 gym facilities"
+        ]
+      },
+      "agent": {
+        "name": "David Chen",
+        "phone": "020 7123 4570",
+        "email": "david.chen@propertyagent.com",
+        "expertise": "Tech District Specialist",
+        "languages": ["English", "Mandarin", "Cantonese"]
+      },
+      "viewings": {
+        "available": true,
+        "link": "/book-viewing/4",
+        "nextAvailable": [
+          "2025-01-03T09:00:00",
+          "2025-01-03T17:30:00",
+          "2025-01-04T10:00:00"
+        ],
+        "virtualTour": "/virtual-tours/tech-studio-4"
+      },
+      "financials": {
+        "serviceCharge": "£1,800 per annum",
+        "groundRent": "£250 per annum",
+        "leaseLength": "250 years from 2020",
+        "councilTaxBand": "B"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Riverside Penthouse Suite",
+      "price": 1200000,
+      "type": "penthouse",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "postcode": "SE1 2AA",
+      "image": "https://i.pinimg.com/originals/eb/3d/84/eb3d8435eaaa876db67d86d615b8dbc8.jpg",
+      "dateAdded": "2024-12-10",
+      "description": "Luxurious penthouse with panoramic river views, private terrace, and premium finishes throughout. This exceptional three-bedroom penthouse offers unparalleled views of the Thames and London skyline. Features include a private roof garden, state-of-the-art home automation, and exclusive resident services.",
+      "features": [
+        "270-degree panoramic Thames views",
+        "Private roof terrace with outdoor kitchen",
+        "Professional-grade home cinema room",
+        "Gaggenau-equipped designer kitchen",
+        "Private lift access with biometric security",
+        "24/7 concierge and valet service"
+      ],
+      "additionalFeatures": {
+        "squareFootage": 2800,
+        "floorLevel": "Penthouse (32nd floor)",
+        "parking": "Two secure underground spaces",
+        "heating": "Underfloor heating + air conditioning",
+        "energyRating": "A",
+        "councilTax": "Band H"
+      },
+      "location": {
+        "nearbyStations": [
+          "London Bridge (4 min walk)",
+          "Tower Bridge (10 min walk)",
+          "Borough (8 min walk)"
+        ],
+        "amenities": [
+          "Borough Market",
+          "Tate Modern",
+          "The Shard",
+          "Riverside restaurants",
+          "Thames Path"
+        ]
+      },
+      "agent": {
+        "name": "Victoria Palmer",
+        "phone": "020 7123 4571",
+        "email": "victoria.palmer@propertyagent.com",
+        "expertise": "Prime London Specialist",
+        "languages": ["English", "Russian", "French"]
+      },
+      "viewings": {
+        "available": true,
+        "link": "/book-viewing/5",
+        "nextAvailable": [
+          "2025-01-03T12:00:00",
+          "2025-01-04T14:00:00",
+          "2025-01-05T11:00:00"
+        ],
+        "virtualTour": "/virtual-tours/riverside-penthouse-5"
+      },
+      "financials": {
+        "serviceCharge": "£8,500 per annum",
+        "groundRent": "£1,000 per annum",
+        "leaseLength": "999 years from 2015",
+        "councilTaxBand": "H"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Converted Warehouse Loft",
+      "price": 550000,
+      "type": "loft",
       "bedrooms": 2,
-      "postcode": "SW1A 3AA",
+      "bathrooms": 2,
+      "postcode": "E1 6QL",
+      "image": "https://i.pinimg.com/originals/de/d5/f3/ded5f32a20eedfda9242228eb07bb8aa.jpg",
       "dateAdded": "2024-12-25",
-      "description": "Charming bungalow in a peaceful neighborhood, perfect for retirement or small families.",
-      "image": "https://images.unsplash.com/photo-1523217582562-09d0def993a6"
+      "description": "Stunning warehouse conversion with original features and contemporary design elements. This unique property combines industrial heritage with modern luxury, featuring double-height ceilings and original exposed brickwork throughout. Perfect for those seeking a distinctive urban home with character.",
+      "features": [
+        "Original exposed brick walls with restored features",
+        "5.5m high ceilings with industrial lighting",
+        "Custom-built mezzanine level master suite",
+        "Triple-glazed industrial-style windows",
+        "Open-plan living space with chef's kitchen",
+        "Secure gated parking with CCTV"
+      ],
+      "additionalFeatures": {
+        "squareFootage": 1800,
+        "floorLevel": "Ground and mezzanine",
+        "parking": "Secure gated parking space",
+        "heating": "Industrial-style radiators + underfloor",
+        "energyRating": "C",
+        "councilTax": "Band E"
+      },
+      "location": {
+        "nearbyStations": [
+          "Whitechapel (6 min walk)",
+          "Aldgate East (8 min walk)",
+          "Liverpool Street (12 min walk)"
+        ],
+        "amenities": [
+          "Spitalfields Market",
+          "Brick Lane",
+          "Shoreditch High Street",
+          "Independent galleries",
+          "Artisan breweries"
+        ]
+      },
+      "agent": {
+        "name": "Alex Turner",
+        "phone": "020 7123 4572",
+        "email": "alex.turner@propertyagent.com",
+        "expertise": "Warehouse Conversion Specialist",
+        "languages": ["English", "Spanish"]
+      },
+      "viewings": {
+        "available": true,
+        "link": "/book-viewing/6",
+        "nextAvailable": [
+          "2025-01-03T13:00:00",
+          "2025-01-04T11:30:00",
+          "2025-01-05T14:00:00"
+        ],
+        "virtualTour": "/virtual-tours/warehouse-loft-6"
+      },
+      "financials": {
+        "serviceCharge": "£2,800 per annum",
+        "groundRent": "£300 per annum",
+        "leaseLength": "250 years from 2018",
+        "councilTaxBand": "E"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Family Home with Pool",
+      "price": 850000,
+      "type": "house",
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "postcode": "KT6 4DN",
+      "image": "https://www.contemporist.com/wp-content/uploads/2021/02/modern-house-outdoor-patio-swimming-pool-170221-144-01.jpg",
+      "dateAdded": "2024-12-28",
+      "description": "Spectacular family home with heated swimming pool, landscaped gardens, and extensive entertainment areas. This luxurious property offers the perfect blend of family living and leisure facilities, including a professional home gym and dedicated games room. Ideal for those who love to entertain and enjoy an active lifestyle.",
+      "features": [
+        "Heated swimming pool with safety cover",
+        "Professional home gym with rubber flooring",
+        "Soundproofed games room with bar area",
+        "Modern kitchen with island and wine fridge",
+        "Double garage with workshop area",
+        "Comprehensive smart security system"
+      ],
+      "additionalFeatures": {
+        "squareFootage": 3500,
+        "plotSize": "0.5 acres",
+        "parking": "Double garage + 4 car driveway",
+        "heating": "Zoned heating system",
+        "energyRating": "B",
+        "councilTax": "Band G"
+      },
+      "location": {
+        "nearbySchools": [
+          "Surbiton High School (0.5 miles)",
+          "Thames Valley Primary (0.3 miles)",
+          "Kingston Grammar (1.2 miles)"
+        ],
+        "amenities": [
+          "Surbiton Racquet Club",
+          "Thames riverside walks",
+          "Richmond Park (3 miles)",
+          "Local shopping parade",
+          "Sports complex"
+        ]
+      },
+      "agent": {
+        "name": "Michael Scott",
+        "phone": "020 7123 4573",
+        "email": "michael.scott@propertyagent.com",
+        "expertise": "Family Home Specialist",
+        "languages": ["English"]
+      },
+      "viewings": {
+        "available": true,
+        "link": "/book-viewing/7",
+        "nextAvailable": [
+          "2025-01-03T10:30:00",
+          "2025-01-04T13:00:00",
+          "2025-01-05T11:30:00"
+        ],
+        "virtualTour": "/virtual-tours/family-home-7"
+      },
+      "financials": {
+        "councilTax": "£3,200 per annum",
+        "estimatedUtilities": "£280 per month",
+        "tenure": "Freehold"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Eco-Friendly Garden Flat",
+      "price": 425000,
+      "type": "flat",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "postcode": "N1 9GU",
+      "image": "https://adorable-home.com/wp-content/gallery/eco-friendly-garden-house/eco-friendly-garden-house-2.jpg",
+      "dateAdded": "2024-12-30",
+      "description": "Sustainable garden flat with solar panels, green roof, and energy-efficient design throughout. This innovative property showcases the latest in eco-friendly living, combining modern comfort with environmental responsibility. Features include smart energy management systems and sustainable materials throughout.",
+      "features": [
+        "Solar panels with battery storage",
+        "Sedum green roof with irrigation system",
+        "Ground source heat pump for efficient heating",
+        "Integrated rainwater harvesting system",
+        "Private garden with native plant species",
+        "Electric vehicle charging point"
+      ],
+      "additionalFeatures": {
+        "squareFootage": 950,
+        "floorLevel": "Ground floor",
+        "parking": "One allocated space with EV charger",
+        "heating": "Ground source heat pump",
+        "energyRating": "A+",
+        "councilTax": "Band C"
+      },
+      "location": {
+        "nearbyStations": [
+          "Angel (7 min walk)",
+          "Highbury & Islington (12 min walk)"
+        ],
+        "amenities": [
+          "Organic food markets",
+          "Community gardens",
+          "Cycle superhighway",
+          "Eco-friendly cafes",
+          "Recycling center"
+        ]
+      },
+      "agent": {
+        "name": "Lucy Green",
+        "phone": "020 7123 4574",
+        "email": "lucy.green@propertyagent.com",
+        "expertise": "Sustainable Property Specialist",
+        "languages": ["English", "German"]
+      },
+      "viewings": {
+        "available": true,
+        "link": "/book-viewing/8",
+        "nextAvailable": [
+          "2025-01-03T15:00:00",
+          "2025-01-04T10:30:00",
+          "2025-01-05T13:00:00"
+        ],
+        "virtualTour": "/virtual-tours/eco-flat-8"
+      },
+      "financials": {
+        "serviceCharge": "£1,500 per annum",
+        "groundRent": "£200 per annum",
+        "leaseLength": "125 years from 2020",
+        "councilTaxBand": "C",
+        "estimatedUtilities": "£80 per month"
+      }
     }
   ]
 }

@@ -7,7 +7,6 @@ import PropertyList from './components/PropertyList';
 import FavoritesList from './components/FavoritesList';
 import PropertyDetail from './components/PropertyDetail';
 import propertyData from './data/properties.json';
-
 function App() {
   const [properties, setProperties] = useState(propertyData.properties);
   const [filteredProperties, setFilteredProperties] = useState(properties);
@@ -111,6 +110,7 @@ function App() {
                           favorites={favorites}
                           onRemove={removeFavorite}
                           onClear={clearFavorites}
+                          onFavorite={toggleFavorite}
                         />
                       </div>
                     </div>
