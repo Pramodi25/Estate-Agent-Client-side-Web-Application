@@ -1,0 +1,37 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Modern 3-Bed House with Garden",
+      "type": "house",
+      "price": 450000,
+      "bedrooms": 3,
+      "postcode": "SW1A 1AA",
+      "dateAdded": "2024-12-15",
+      "description": "Beautiful modern house with a spacious garden, recently renovated kitchen, and excellent transport links.",
+      "image": "https://images.unsplash.com/photo-1518780664697-55e3ad937233"
+    },
+    {
+      "id": 2,
+      "title": "Luxury City Centre Apartment",
+      "type": "flat",
+      "price": 350000,
+      "bedrooms": 2,
+      "postcode": "SW1A 2AA",
+      "dateAdded": "2024-12-20",
+      "description": "Stunning city centre apartment with panoramic views, modern amenities, and secure parking.",
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+    },
+    {
+      "id": 3,
+      "title": "Cozy Bungalow in Quiet Area",
+      "type": "bungalow",
+      "price": 280000,
+      "bedrooms": 2,
+      "postcode": "SW1A 3AA",
+      "dateAdded": "2024-12-25",
+      "description": "Charming bungalow in a peaceful neighborhood, perfect for retirement or small families.",
+      "image": "https://images.unsplash.com/photo-1523217582562-09d0def993a6"
+    }
+  ]
+}
