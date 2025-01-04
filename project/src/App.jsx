@@ -96,7 +96,7 @@ function App() {
                 path="/"
                 element={
                   <div className="space-y-6">
-                    <SearchForm onSearch={handleSearch} />
+                    <SearchForm onSearch={handleSearch} />          
                     <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
                       <div className="lg:col-span-3">
                         <PropertyList

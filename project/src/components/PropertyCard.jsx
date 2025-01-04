@@ -15,8 +15,8 @@ function PropertyCard({ property, isFavorite, onFavorite }) {
   return (
     <div
       ref={drag}
-      className={`bg-white rounded-lg shadow-md p-4 ${
-        isDragging ? 'opacity-50' : ''
+      className={`bg-white rounded-lg shadow-md p-4 transition-transform transform ${
+        isDragging ? 'opacity-50' : 'hover:scale-105'
       }`}
       style={{ cursor: 'move' }}
     >

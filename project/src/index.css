@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; 
+
+@media (max-width: 768px) {
+    .search-form {
+      flex-direction: column;
+    }
+  
+    .property-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .favorites-list {
+      display: block;
+      width: 100%;
+    }
+  }
+  
