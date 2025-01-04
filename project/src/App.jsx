@@ -7,6 +7,9 @@ import PropertyList from './components/PropertyList';
 import FavoritesList from './components/FavoritesList';
 import PropertyDetail from './components/PropertyDetail';
 import propertyData from './data/properties.json';
+import Header from './components/Header';
+import Contact from './components/Contact';
+
 function App() {
   const [properties, setProperties] = useState(propertyData.properties);
   const [filteredProperties, setFilteredProperties] = useState(properties);
@@ -81,15 +84,8 @@ function App() {
   return (
     <DndProvider backend={HTML5Backend}>
       <Router>
-        <div className="min-h-screen bg-white">
-          <header className="bg-white border-b">
-            <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-              <h1 className="text-2xl font-bold">PropertyFinder</h1>
-              <button className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900">
-                Sign in
-              </button>
-            </div>
-          </header>
+        <div className="min-h-screen bg-gray-100">
+          <Header />
           <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
             <Routes>
               <Route
@@ -118,6 +114,17 @@ function App() {
                 }
               />
               <Route
+                path="/favorites"
+                element={
+                  <FavoritesList
+                    favorites={favorites}
+                    onRemove={removeFavorite}
+                    onClear={clearFavorites}
+                    onFavorite={toggleFavorite}
+                  />
+                }
+              />
+              <Route
                 path="/property/:id"
                 element={
                   <PropertyDetail
@@ -127,6 +134,7 @@ function App() {
                   />
                 }
               />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
         </div>
