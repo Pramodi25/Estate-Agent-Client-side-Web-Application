@@ -10,6 +10,7 @@ function PropertyDetail({ onFavorite, isFavorite }) {
   const property = propertiesData.properties.find(p => p.id === parseInt(id));
   const [selectedImage, setSelectedImage] = useState(0);
 
+  
   if (!property) {
     return (
       <div className="text-center py-10">
@@ -29,13 +30,13 @@ function PropertyDetail({ onFavorite, isFavorite }) {
       case 'gallery':
       const propertyImages = [
         property.image,
-        'https://wfclardozsxtrutoorim.supabase.co/storage/v1/object/public/conversationMedia/temp/2025-01-04/images/069c9e00-aeca-4924-8566-ccda205e6b12.png',
-        '/images/house2.jpg',
-        '/images/house3.jpg',
-        '/images/house4.jpg',
-        '/images/house5.jpg',
-        '/images/house6.jpg',
-        '/images/house7.jpg'
+        '/images/mordern3bedH1.jpg',
+        '/images/mordern3bedH2.jpg',
+        '/images/mordern3bedH3.jpg',
+        '/images/mordern3bedH4.jpg',
+        '/images/mordern3bedH5.jpg',
+        '/images/mordern3bedH6.jpg',
+        '/images/mordern3bedH7.jpg'
       ];
 
       return (
@@ -131,7 +132,7 @@ function PropertyDetail({ onFavorite, isFavorite }) {
         );
         case 'floorPlan':
           const floorPlanImages = {
-            house: "https://i.pinimg.com/originals/95/0c/5d/950c5d8138f6c2f8b54c8ee18e1b1d43.jpg",
+            house: "images/3bedfloorplan.jpg",
             flat: "https://i.pinimg.com/originals/f3/af/df/f3afdf0457d6e168c4031c7200227e30.png",
             studio: "https://i.pinimg.com/originals/6d/2f/61/6d2f611a39ffc7c9ccdcc11592fec0ce.jpg",
             penthouse: "https://i.pinimg.com/originals/04/f7/1e/04f71e23f3b25857e7c081d8564ef147.jpg",
