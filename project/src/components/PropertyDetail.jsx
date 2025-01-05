@@ -8,6 +8,7 @@ function PropertyDetail({ onFavorite, isFavorite }) {
   const [activeTab, setActiveTab] = useState('description');
   
   const property = propertiesData.properties.find(p => p.id === parseInt(id));
+  const [selectedImage, setSelectedImage] = useState(0);
 
   if (!property) {
     return (
@@ -25,6 +26,54 @@ function PropertyDetail({ onFavorite, isFavorite }) {
 
   const renderTabContent = () => {
     switch (activeTab) {
+      case 'gallery':
+      const propertyImages = [
+        property.image,
+        'https://wfclardozsxtrutoorim.supabase.co/storage/v1/object/public/conversationMedia/temp/2025-01-04/images/069c9e00-aeca-4924-8566-ccda205e6b12.png',
+        '/images/house2.jpg',
+        '/images/house3.jpg',
+        '/images/house4.jpg',
+        '/images/house5.jpg',
+        '/images/house6.jpg',
+        '/images/house7.jpg'
+      ];
+
+      return (
+        <div className="py-8">
+          <div className="relative">
+            <img
+              src={propertyImages[selectedImage]}
+              alt={`Property view ${selectedImage + 1}`}
+              className="w-full h-[500px] object-cover rounded-lg"
+            />
+            <button
+              onClick={() => setSelectedImage(prev => prev === 0 ? propertyImages.length - 1 : prev - 1)}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white"
+            >
+              ←
+            </button>
+            <button
+              onClick={() => setSelectedImage(prev => prev === propertyImages.length - 1 ? 0 : prev + 1)}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-lg hover:bg-white"
+            >
+              →
+            </button>
+          </div>
+          <div className="flex gap-2 mt-4 overflow-x-auto pb-4">
+            {propertyImages.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Thumbnail ${index + 1}`}
+                className={`h-20 w-20 object-cover cursor-pointer rounded-md ${
+                  selectedImage === index ? 'border-2 border-blue-500' : ''
+                }`}
+                onClick={() => setSelectedImage(index)}
+              />
+            ))}
+          </div>
+        </div>
+      );
       case 'description':
         return (
           <>
@@ -201,6 +250,16 @@ function PropertyDetail({ onFavorite, isFavorite }) {
               }`}
             >
               Description
+            </button>
+            <button
+              onClick={() => setActiveTab('gallery')}
+              className={`py-4 px-1 border-b-2 font-medium text-sm ${
+                activeTab === 'gallery'
+                  ? 'border-blue-500 text-blue-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+              }`}
+            >
+              Gallery
             </button>
             <button
               onClick={() => setActiveTab('floorPlan')}
